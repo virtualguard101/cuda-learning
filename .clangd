@@ -1,0 +1,12 @@
+CompileFlags:
+  Add:
+    - --cuda-path=/opt/cuda
+    - -I/opt/cuda/include
+    - -xcuda
+    - --cuda-gpu-arch=sm_89
+    - -I/home/virtualguard/vg101/notebooks/vglab/infrastructure/cuda/cuda-learning/src/multi/include
+  Remove:
+    - -forward-unknown-to-host-compiler
+    - --options-file*
+    - --generate-code=*
+    - -Xcompiler=*
